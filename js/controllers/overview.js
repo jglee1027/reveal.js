@@ -26,6 +26,8 @@ export default class Overview {
 		// Only proceed if enabled in config
 		if( this.Reveal.getConfig().overview && !this.isActive() ) {
 
+			document.querySelector('.slides').style.overflow = 'visible';
+
 			this.active = true;
 
 			this.Reveal.getRevealElement().classList.add( 'overview' );
@@ -140,6 +142,8 @@ export default class Overview {
 
 		// Only proceed if enabled in config
 		if( this.Reveal.getConfig().overview ) {
+
+			document.querySelector('.slides').style.overflow = 'scroll';
 
 			this.active = false;
 

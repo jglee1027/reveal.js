@@ -1,0 +1,164 @@
+/**
+ * jglee theme for reveal.js.
+ *
+ * Copyright (C) 2022 Jonggyu Lee, https://github.com/jglee1027
+ *
+ * - Derived from white theme
+ * - Make the slides scrollable and show scrollbar
+ * - Modify the heading style
+ * - Custom the margin and the padding of ul and ol
+ * - Use 'Kotra hope' font
+ */
+
+@import "../template/mixins";
+@import "../template/settings";
+
+@import url(./fonts/source-sans-pro/source-sans-pro.css);
+@font-face {
+  font-family: 'hope';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/KOTRAHOPE.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+$backgroundColor: #fff;
+$mainColor: #222;
+$headingColor: #222;
+$mainFontSize: 42px;
+$mainFont: 'hope', 'Source Sans Pro', Helvetica, sans-serif;
+$headingFont: 'hope', 'Source Sans Pro', Helvetica, sans-serif;
+$headingTextShadow: none;
+$headingTextTransform: none;
+$headingLetterSpacing: normal;
+$headingFontWeight: 600;
+$linkColor: #2a76dd;
+$linkColorHover: lighten( $linkColor, 15% );
+$selectionBackgroundColor: lighten( $linkColor, 25% );
+
+// Change text colors against dark slide backgrounds
+@include dark-bg-text-color(#fff);
+
+@import "../template/theme";
+
+.figure p {
+  text-align: center;
+}
+
+.slides {
+  overflow: auto;
+  pointer-events: auto !important;
+  border: 1px solid #eeeeee;
+}
+
+/* scrollbar for Chrome, Safari and Opera */
+.slides::-webkit-scrollbar {
+  width: 1px;
+  height: 1px;
+  background-color: transparent;
+}
+
+.slides::-webkit-scrollbar-button {
+  width: 0;
+  height: 0;
+}
+
+.slides::-webkit-scrollbar-thumb {
+  background: #eeeeee;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.slides {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.reveal section {
+  text-align: center;
+}
+
+.reveal {
+  font-size: 20pt;
+  text-align: left;
+}
+
+.reveal th {
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: normal;
+  text-align: center;
+}
+
+.reveal h1 {
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: normal;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.reveal h2 {
+  background-color: #eeeeee;
+  border-left: 10pt solid black;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: normal;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.reveal h3 {
+  background-color: #eefeff;
+  border-left: 10pt solid blue;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2.0rem;
+  padding-left: 10pt;
+  text-align: left;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.reveal h4 {
+  background-color: #eeffee;
+  border-left: 10pt solid green;
+  font-size: 1.8rem;
+  padding-left: 10pt;
+  text-align: left;
+}
+
+.reveal h5 {
+  background-color: #ffeeee;
+  border-left: 10pt solid red;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: normal;
+  padding-left: 10pt;
+  text-align: left;
+}
+
+.reveal h6 {
+  background-color: #ffeeff;
+  border-left: 10pt solid magenta;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: normal;
+  padding-left: 10pt;
+  text-align: left;
+}
+
+.reveal ul {
+  margin-left: 0;
+  padding-left: 1em;
+}
+
+.reveal ol {
+  margin-left: 0;
+  padding-left: 1em;
+}
+
+.reveal ul ul, .reveal ul ol, .reveal ol ol, .reveal ol ul {
+  margin-left: 0px;
+  padding-left: 1em;
+}

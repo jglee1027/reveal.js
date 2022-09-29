@@ -7,7 +7,7 @@
  * - Make the slides scrollable and show scrollbar
  * - Modify the heading style
  * - Custom the margin and the padding of ul and ol
- * - Use '1973 Mimi World Regular' font
+ * - Use 'Environment Regular' font
  */
 
 @import "../template/mixins";
@@ -15,8 +15,8 @@
 
 @import url(./fonts/source-sans-pro/source-sans-pro.css);
 @font-face {
-  font-family: 'mimi';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.1/1973MimiWorldR.woff') format('woff');
+  font-family: 'env';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/EnvironmentR.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
@@ -25,8 +25,8 @@ $backgroundColor: #fff;
 $mainColor: #222;
 $headingColor: #222;
 $mainFontSize: 42px;
-$mainFont: 'mimi', 'Source Sans Pro', Helvetica, sans-serif;
-$headingFont: 'mimi', 'Source Sans Pro', Helvetica, sans-serif;
+$mainFont: 'env', 'Source Sans Pro', Helvetica, sans-serif;
+$headingFont: 'env', 'Source Sans Pro', Helvetica, sans-serif;
 $headingTextShadow: none;
 $headingTextTransform: none;
 $headingLetterSpacing: normal;
